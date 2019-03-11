@@ -1,4 +1,10 @@
 # obkey - openbox key editor - undead
+
+###  Forked from https://github.com/luffah/obkey   
+Updated 2019-03-11 by fredx181      
+Although I'm really not a python programmer, there are some small improvements, still not perfect though...
+Most of the original text from luffah below.      
+
 ```
 obkey development was dead.
 but, a powerfull sorceress summoned it as an UNDEAD.
@@ -50,7 +56,7 @@ Stop mumbling : hope still exists : there's [ObConf](http://openbox.org/wiki/ObC
 
 ### With Git
 ```shell
-git clone https://github.com/luffah/obkey.git
+git clone https://github.com/fredx181/obkey.git
 
 # test it works (you can use it directly this way)
 python obkey
@@ -58,28 +64,22 @@ python obkey
 # MANAGE DEPENDENCIES
 # AND INSTALL
 
-## With PIP and setup.py
-sudo pip install gi gettext
+## With setup.py
 
 sudo python setup.py install
 
-## With Debian installer 
-sudo apt install python-gi python-gettext
-make installdeb
 ```
 
 ### Without Git
 
 ##### Debian
 
-Download the package here : [Obkey for debian](https://github.com/luffah/obkey/raw/master/obkey.deb)
+Download the package here : [Obkey for debian](https://github.com/fredx181/obkey/raw/master/obkey_1.3.1-1_all.deb)
 
-Below the last checksum.
-```shell
-md5sum obkey.deb | grep 674864f24f536cd6d422708d37ee811f
-
-sudo apt install python-gi python-gettext
-sudo dpkg -i obkey.deb
+```   
+sudo apt-get update   
+sudo dpkg -i obkey_1.3.1-1_all.deb
+apt-get -f install   
 ```
 
 # About KeyBindings
